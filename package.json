@@ -1,0 +1,34 @@
+{
+  "name": "fireorm-geopoint",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "start": "npm run build -w && node ./dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dietrichwestbrooks/fireorm-geopoint.git"
+  },
+  "author": "Dietrich Westbrooks <dietrichwestbrooks1@gmail.com> (https://github.com/dietrichwestbrooks)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dietrichwestbrooks/fireorm-geopoint/issues"
+  },
+  "homepage": "https://github.com/dietrichwestbrooks/fireorm-geopoint#readme",
+  "dependencies": {
+    "firebase-admin": "^8.1.0",
+    "fireorm": "^0.5.2",
+    "reflect-metadata": "^0.1.13"
+  },
+  "devDependencies": {
+    "ts-loader": "^6.0.2",
+    "tslint": "^5.17.0",
+    "typescript": "^3.5.2",
+    "webpack": "^4.34.0",
+    "webpack-cli": "^3.3.4",
+    "webpack-node-externals": "^1.7.2"
+  }
+}
