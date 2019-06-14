@@ -1,7 +1,10 @@
+import 'es6-shim';
 import * as admin from 'firebase-admin';
 import * as fireorm from 'fireorm';
 import { GetRepository } from 'fireorm';
 import { Point } from './point';
+
+// const point = new admin.firestore.GeoPoint();
 
 import serviceAccount from './serviceAccountKey.json';
 
