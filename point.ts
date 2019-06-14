@@ -1,5 +1,5 @@
 import { Transform, Type, Expose } from 'class-transformer';
-import * as firebase from 'firebase-admin';
+import * as admin from 'firebase-admin';
 import { Collection } from 'fireorm';
 
 // Use this class to fix GeoPoint transform issue
@@ -22,7 +22,7 @@ export class Point {
   label: string;
   @Type(() => Location)
   @Transform(
-    value => new firebase.firestore.GeoPoint(value.latitude, value.longitude),
+    value => new admin.firestore.GeoPoint(value.latitude, value.longitude),
     { toClassOnly: true })
-  location: firebase.firestore.GeoPoint;
+  location: admin.firestore.GeoPoint;
 }
