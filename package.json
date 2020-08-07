@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/dietrichwestbrooks/fireorm-geopoint#readme",
   "dependencies": {
-    "class-transformer": "^0.2.3",
+    "class-transformer": "^0.3.1",
     "es6-shim": "^0.35.5",
     "firebase-admin": "^8.1.0",
     "fireorm": "^0.5.2",
